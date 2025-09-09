@@ -44,21 +44,16 @@
           information.
         </h3>
         <br />
-
-        <p>
-          Security question*:
-          <input
-            type="text"
-            name="Security question*"
-            size="20"
-            maxlength="9"
-          />
+        Security question*:
+          <select name="Security question*" size="1">
+            <option value="what is your pet name">what is your pet name</option>
+            </select>
           <br />
-        </p>
-
+          
         <p>
           Security answer*:
           <input type="text" name="Security answer*" size="20" maxlength="9" />
+          </p>
           <br />
           <br />
           prefered Language* :
@@ -108,55 +103,7 @@
           />Unmarriad
           <br />
           <br />
-          Date of birth* :
-          <select name="Date of birth*" size="1">
-            <option value="january">january</option>
-            <option value="february">february</option>
-            <option value="march">march</option>
-            <option value="april">april</option>
-            <option value="may">may</option>
-            <option value="june">june</option>
-            <option value="july">july</option>
-            <option value="august">august</option>
-            <option value="september">september</option>
-            <option value="Dateoctober">october</option>
-            <option value="november">november</option>
-            <option value="december">december</option>
-          </select>
-
-          <select name="Date of birth*" size="1">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-          </select>
-          <select name="Date of birth*" size="1">
-            <option value="2001">2001</option>
-            <option value="2002">2002</option>
-            <option value="2003">2003</option>
-            <option value="2004">2004</option>
-            <option value="2005">2005</option>
-            <option value="2006">2006</option>
-            <option value="2007">2007</option>
-            <option value="2008">2008</option>
-            <option value="2009">2009</option>
-            <br />
-            <br />
-          </select>
-          <br />
-          <br />
+         <label> Date of birth* :<input type="date" name="dob" required></label><br> <br>
           Occupation*:
           <select name="Occupation*" size="1">
             <option value="Engineer">Engineer</option>
@@ -311,8 +258,8 @@
           value="No" />No
         <br />
         <p align="center">
-          <input type="submit" value="Submit Registration from>>>>>" /></p
-      ></from>
+          <input type="submit" value="Submit Registration from>>>>>" /></p >
+    </from>
     </font>
   </body>
 </html>
