@@ -3,263 +3,421 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
+    <title>Account Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
+  <body
+    style="margin: 0; font-family: Arial, sans-serif; background-color: #fff"
+  >
+    <!-- Navbar -->
+    <nav
+      style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        flex-wrap: wrap;
+      "
+    >
+      <div style="font-size: 22px; font-weight: bold; color: orange">
+        ShopEase
+      </div>
+      <ul
+        style="
+          display: flex;
+          list-style: none;
+          gap: 15px;
+          margin: 0;
+          padding: 0;
+          flex-wrap: wrap;
+        "
+      >
+        <li>
+          <a
+            href="#"
+            style="text-decoration: none; color: black; font-weight: bold"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            style="text-decoration: none; color: black; font-weight: bold"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-cart-shopping" style="color: black"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            style="text-decoration: none; color: black; font-weight: bold"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            style="text-decoration: none; color: black; font-weight: bold"
+            >Contact</a
+          >
+        </li>
+        <li>
+          <a href="#manageAccount">
+            <i class="fa-solid fa-user" style="color: black"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-  <body bgcolor="plum">
-    <font face="Arial" color="black" size="3">
-      <h3>Indivitual Registration</h3>
-      <h3>mandatory*</h3>
-      <h4>
-        IN PROFILE MAY LEAD TO DEACHVATION PLEASE USE A VALID E_mai AND MORE
-        NUMBER IN Registration.
-      </h4>
-      <form method="post" action="mailto:rumadey1981r@gmail.com">
-        <br />
-        <p>
-          User ID*:
-          <input type="text" User ID*="user id" size="20" maxlength="9" />
-          <br />
-        </p>
+    <!-- Main Section -->
+    <div
+      style="
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        min-height: 80vh;
+        padding: 20px;
+        gap: 20px;
+      "
+    >
+      <!-- Left Image -->
+      <div style="flex: 1; min-width: 300px; text-align: center">
+        <img
+          src="shopping.jpeg"
+          alt="Shopping"
+          style="width: 80%; max-width: 400px; border-radius: 10px"
+        />
+      </div>
 
-        <p>
-          pasword*:
-          <input type="password" name="password" size="20" maxlength="9" />
-          <br />
-        </p>
+      <!-- Right Form -->
+      <div style="flex: 1; min-width: 300px; text-align: center">
+        <h2 style="margin-bottom: 15px">Welcome to ShopEase</h2>
 
-        <p>
-          confrim pasword*:
+        <!-- Login -->
+        <div id="loginForm" style="padding: 15px">
+          <h3>Login</h3>
+
           <input
-            type="password"
-            name="confrim password"
-            size="20"
-            maxlength="9"
-          />
-          <br />
-        </p>
-
-        <h3>
-          if you forget your password ,we will identify you with this
-          information.
-        </h3>
-        <br />
-        Security question*:
-          <select name="Security question*" size="1">
-            <option value="what is your pet name">what is your pet name</option>
-            </select>
-          <br />
-          
-        <p>
-          Security answer*:
-          <input type="text" name="Security answer*" size="20" maxlength="9" />
-          </p>
-          <br />
-          <br />
-          prefered Language* :
-          <select name="prefered Language*" size="1">
-            <option value="English">English</option>
-            <option value="Bengali">Bengali</option>
-            <option value="Hindi">Hindi</option>
-          </select>
-          <br />
-        </p>
-
-        <h4>PERSONAL DETAILS</h4>
-        <p>
-          First Name*:
-          <input type="text" name="First Name*" size="20" maxlength="9" /><br />
-        </p>
-
-        <p>
-          Middle Name:
-          <input
+            id="loginEmail"
             type="text"
-            name="Middele Name"
-            size="20"
-            maxlength="9"
+            placeholder="Email"
+            style="
+              width: 80%;
+              padding: 10px;
+              margin: 8px;
+              border-radius: 5px;
+              border: 1px solid #ccc;
+            "
           /><br />
-        </p>
 
-        <p>
-          Last Name:
-          <input type="text" name="Last Name" size="20" maxlength="9" /><br />
-          <br />
-          Gender*:
-          <br />
-          <br />
-          <input type="radio" name="Gender*" value="Male" />Male
-          <input type="radio" name="Gender*" value="Female" />Female
-          <br />
-          <br />
-          Mariatal Status*:
-          <br />
-          <br />
-          <input type="radio" name="Mariatal Status*" value="Marriad" />Marriad
           <input
-            type="radio"
-            name="Mariatal Status*"
-            value="Unmarriad"
-          />Unmarriad
-          <br />
-          <br />
-         <label> Date of birth* :<input type="date" name="dob" required></label><br> <br>
-          Occupation*:
-          <select name="Occupation*" size="1">
-            <option value="Engineer">Engineer</option>
-            <option value="teacher">teacher</option>
-            <option value="businees man">business man</option>
-            <option value="others">others</option>
-          </select>
-          <br />
-        </p>
+            id="loginPassword"
+            type="password"
+            placeholder="Password"
+            style="
+              width: 80%;
+              padding: 10px;
+              margin: 8px;
+              border-radius: 5px;
+              border: 1px solid #ccc;
+            "
+          /><br />
 
-        <p>
-          Aadhar card no.:
+          <button
+            onclick="login()"
+            style="
+              background-color: orange;
+              color: white;
+              border: none;
+              padding: 10px 25px;
+              border-radius: 5px;
+              cursor: pointer;
+            "
+          >
+            Login
+          </button>
+
+          <p style="margin-top: 10px">
+            Don't have an account?
+            <a href="#" onclick="showSignup()">Sign up</a>
+          </p>
+        </div>
+
+        <!-- Signup -->
+        <div id="signupForm" style="display: none; padding: 15px">
+          <h3>Sign Up</h3>
+
           <input
-            type="Aadhar card no."
-            name="Aadhar card no."
-            size="20"
-            maxlength="9"
-          />
-          <br />
-        </p>
+            id="signupName"
+            type="text"
+            placeholder="Full Name"
+            style="
+              width: 80%;
+              padding: 10px;
+              margin: 8px;
+              border-radius: 5px;
+              border: 1px solid #ccc;
+            "
+          /><br />
 
-        <p>
-          pan card:
-          <input type="pan card" name="pan crad" size="20" maxlength="9" />
-          <br />
-        </p>
-
-        <p>
-          Email*:
-          <input type="Email" name="Email*" size="20" maxlength="9" />
-          <br />
-        </p>
-
-        <p>
-          Mobile*:
-          <input type="Mobile" name="Mobile*" size="20" maxlength="9" />
-          <br />
-          <br />
-          Nationality:
-
-          <select name="Nationality*" size="1">
-            <option value="Indian">Indian</option>
-            <option value="others">others</option>
-          </select>
-          <br />
-        </p>
-
-        <h4>Residential Address</h4>
-        <p>
-          Flat/Door/Block no.*:
           <input
-            type="Flat/Door/Block no.:"
-            name="Flat/Door/Block no.*"
-            size="20"
-            maxlength="9"
-          />
-        </p>
+            id="signupEmail"
+            type="email"
+            placeholder="Email"
+            style="
+              width: 80%;
+              padding: 10px;
+              margin: 8px;
+              border-radius: 5px;
+              border: 1px solid #ccc;
+            "
+          /><br />
 
-        <p>
-          Street/Lane:
           <input
-            type="Street/Lane"
-            name="Street/Lane"
-            size="20"
-            maxlength="9"
-          />
-        </p>
-        <br>
-          City/Town:
-          <select name="City/Town" size="1">
-            <option value="kolkata">kolkata</option>
-            <option value="patna">patna</option>
-            <option value="Mumbai">Mumbai</option>
-            </select>
-            <br>
-        <p>
-          Area/locality:
+            id="signupMobile"
+            type="text"
+            placeholder="Mobile No"
+            style="
+              width: 80%;
+              padding: 10px;
+              margin: 8px;
+              border-radius: 5px;
+              border: 1px solid #ccc;
+            "
+          /><br />
+
           <input
-            type="Area/locality"
-            name="Area/locality"
-            size="20"
-            maxlength="9"
-          />
-        </p>
+            id="signupPassword"
+            type="password"
+            placeholder="Password"
+            style="
+              width: 80%;
+              padding: 10px;
+              margin: 8px;
+              border-radius: 5px;
+              border: 1px solid #ccc;
+            "
+          /><br />
 
-        <p>
-          Country*:
-          <input type="Country*" name="Country*" size="20" maxlength="9" />
-        </p>
+          <button
+            onclick="signup()"
+            style="
+              background-color: orange;
+              color: white;
+              border: none;
+              padding: 10px 25px;
+              border-radius: 5px;
+              cursor: pointer;
+            "
+          >
+            Register
+          </button>
 
-        <p>
-          Pincode*:
-          <input type="Pincode*" name="Pincode*" size="20" maxlength="9" />
-        </p>
+          <p style="margin-top: 10px">
+            Already have an account?
+            <a href="#" onclick="showLogin()">Login</a>
+          </p>
+        </div>
+      </div>
+    </div>
 
-        <p>
-          State: <input type="State" name="State" size="20" maxlength="9" />
-        </p>
+    <!-- Footer / Manage Account -->
+    <footer
+      id="manageAccount"
+      style="background-color: #f9f9f9; text-align: center; padding: 25px"
+    >
+      <h3>Manage Account</h3>
+      <div style="margin-top: 15px">
+        <button
+          onclick="showAccountDetails()"
+          style="
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+          "
+        >
+          Account Details
+        </button>
 
-      <br>
-          post office*:
-          <select value="post office*" size="1">
-            <option value="Haltu">Haltu</option>
-            <option value="kashba">Kashba</option>
-            <option value="garfa">garfa</option>
-          </select>
-<br>
-        <p>
-          Phone*:
-          <input type="Phone" name="Phone*" size="20" maxlength="9" />
-          <br />
-          <br />
+        <button
+          onclick="showAddress()"
+          style="
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+          "
+        >
+          Address
+        </button>
+      </div>
 
-          Copy Residence to office Address:
-          <br />
-          <br />
-          <input
-            type="radio"
-            name="Copy Residence to office Address"
-            value="Yes"
-          />Yes
-          <input
-            type="radio"
-            name="Copy Residence to office Address"
-            value="No"
-          />No <br />
-        </p>
-
-        <h4>
-          Subscription to IRCTC New latters promotion IRCTC SBI card through
-          email sms.
-        </h4>
-        <br />
-        IRCTS New latters:
-
-        <input type="radio" name="IRCTS New latters" value="Yes" />Yes
-        <input type="radio" name="IRCTS New latters" value="No" />No
-        <br />
-        Commercial promotion:
-        <input type="radio" name="Commercial promotion" value="Yes" />Yes
-        <input type="radio" name="Commercial promotion" value="No" />No
-        <br />
-        Please infrom me about IRCTS SBI Card*:
+      <!-- Account Details -->
+      <div id="accountDetails" style="display: none; margin-top: 15px">
+        <input
+          id="userName"
+          type="text"
+          placeholder="Full Name"
+          style="
+            width: 60%;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+          "
+        /><br />
 
         <input
-          type="radio"
-          name="Please infrom me about IRCTS SBI Card*"
-          value="Yes" />Yes
+          id="userEmail"
+          type="email"
+          placeholder="Email"
+          style="
+            width: 60%;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+          "
+        /><br />
+
         <input
-          type="radio"
-          name="Please infrom me about IRCTS SBI Card*"
-          value="No" />No
-        <br />
-        <p align="center">
-         <center> <button type="Submit">Submit Registration form</button></center>
-    </form>
-    </font>
+          id="userMobile"
+          type="text"
+          placeholder="Mobile No"
+          style="
+            width: 60%;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+          "
+        /><br />
+
+        <button
+          onclick="saveAccountDetails()"
+          style="
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+          "
+        >
+          Save Details
+        </button>
+      </div>
+
+      <!-- Address Section -->
+      <div id="addressSection" style="display: none; margin-top: 15px">
+        <textarea
+          id="userAddress"
+          placeholder="Write a new address..."
+          style="
+            width: 60%;
+            height: 80px;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+          "
+        ></textarea
+        ><br />
+
+        <button
+          onclick="saveAddress()"
+          style="
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+          "
+        >
+          Save Address
+        </button>
+
+        <p id="savedAddress" style="font-weight: bold; margin-top: 10px"></p>
+      </div>
+    </footer>
+
+    <script>
+      function showSignup() {
+        document.getElementById("loginForm").style.display = "none";
+        document.getElementById("signupForm").style.display = "block";
+      }
+
+      function showLogin() {
+        document.getElementById("signupForm").style.display = "none";
+        document.getElementById("loginForm").style.display = "block";
+      }
+
+      function login() {
+        let email = document.getElementById("loginEmail").value;
+        let pass = document.getElementById("loginPassword").value;
+        if (email && pass) {
+          alert("Login successful!");
+        } else {
+          alert("Please fill all fields!");
+        }
+      }
+
+      function signup() {
+        let name = document.getElementById("signupName").value;
+        let email = document.getElementById("signupEmail").value;
+        let mobile = document.getElementById("signupMobile").value;
+        let pass = document.getElementById("signupPassword").value;
+        if (name && email && mobile && pass) {
+          alert("Account created successfully!");
+          showLogin();
+        } else {
+          alert("Please fill all details!");
+        }
+      }
+
+      function showAccountDetails() {
+        document.getElementById("accountDetails").style.display = "block";
+        document.getElementById("addressSection").style.display = "none";
+      }
+
+      function showAddress() {
+        document.getElementById("addressSection").style.display = "block";
+        document.getElementById("accountDetails").style.display = "none";
+      }
+
+      function saveAccountDetails() {
+        alert("Account details saved!");
+      }
+
+      function saveAddress() {
+        let a = document.getElementById("userAddress").value;
+        if (a) {
+          document.getElementById("savedAddress").innerText =
+            "Saved Address: " + a;
+          alert("Address saved successfully!");
+        } else {
+          alert("Please enter an address!");
+        }
+      }
+    </script>
   </body>
 </html>
